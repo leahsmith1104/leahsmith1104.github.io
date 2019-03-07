@@ -1,1 +1,18 @@
+@import "./reset";
+@import "./variables";
 @import "./nav";
+@import "./footer";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: $base-font-size;
+    font-family: $base-font;
+    color: $dark-text;
+    line-height: 1.4;
+}
+
+.fixed-width {
+    width: 1200px;
+    margin: 0 auto;
+}
