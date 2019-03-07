@@ -2,9 +2,11 @@ nav {
     background-color: $primary-color;
     margin: 0;
     overflow: hidden;
+    padding: 20px 0;
+    display: flex
   
     ul {
-      text-align: right;
+      text-align: center;
     }
   
     li {
@@ -22,9 +24,14 @@ nav {
   }
   
   .navigation {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      margin: 0 auto;
+      @media (min-width: 1025px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
   }
   
   .navigation__item::after, .selected::after {
