@@ -1,0 +1,22 @@
+@mixin grad-main($start-color, $middle-color, $end-color, $fallback-color){
+    background-color: $fallback-color;
+    background-image: -moz-linear-gradient(left, $start-color 0%, $middle-color 50%,$end-color 100%);
+    background-image: -webkit-linear-gradient(left, $start-color 0%,$middle-color 50%,$end-color 100%);
+    background-image: linear-gradient(to left, $start-color 0%,$middle-color 50%,$end-color 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='#4bc0c8',GradientType=0 );
+}
+
+@mixin grad-text($start-color, $middle-color, $end-color, $fallback-color) {
+  color: $fallback-color;
+
+  @supports (-webkit-background-clip: text) {
+    background: -moz-linear-gradient(left, $start-color 0%, $middle-color 50%,$end-color 100%);
+    background: -webkit-linear-gradient(left, $start-color 0%,$middle-color 50%,$end-color 100%);
+    background: linear-gradient(to left, $start-color 0%,$middle-color 50%,$end-color 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='#4bc0c8',GradientType=0 );
+    background-size: 120% 120%;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

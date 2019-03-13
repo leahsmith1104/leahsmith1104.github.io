@@ -1,5 +1,6 @@
 @import "./reset";
 @import "./variables";
+@import "./gradients";
 @import "./nav";
 @import "./footer";
 
@@ -13,15 +14,15 @@ body {
 }
 
 .fixed-width {
-    width: $site-width;
+    max-width: $site-width;
     margin: 0 auto;
 }
 
 .page-border {
     height: 10px;
-    background: #feac5e;
-    background: -moz-linear-gradient(left, #feac5e 0%, #c779d0 50%, #4bc0c8 100%);
-    background: -webkit-linear-gradient(left, #feac5e 0%,#c779d0 50%,#4bc0c8 100%);
-    background: linear-gradient(to right, #feac5e 0%,#c779d0 50%,#4bc0c8 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feac5e', endColorstr='#4bc0c8',GradientType=0 );
+    background: $fallback-color;
+    background: -moz-linear-gradient(left, $start-color 0%, $middle-color 50%,$end-color 100%);
+    background: -webkit-linear-gradient(left, $start-color 0%,$middle-color 50%,$end-color 100%);
+    background: linear-gradient(to left, $start-color 0%,$middle-color 50%,$end-color 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='#4bc0c8',GradientType=0 );
 }
