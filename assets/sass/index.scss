@@ -1,7 +1,9 @@
 @import "./reset";
+@import "./fonts";
 @import "./variables";
 @import "./gradients";
 @import "./nav";
+@import "./hero";
 @import "./footer";
 
 body {
@@ -13,16 +15,21 @@ body {
     line-height: 1.4;
 }
 
+.site-wrapper {
+    max-width: $max-site-width;
+    margin: 0 auto;
+}
+
 .fixed-width {
     max-width: $site-width;
     margin: 0 auto;
 }
 
 .page-border {
-    height: 10px;
-    background: $fallback-color;
-    background: -moz-linear-gradient(left, $start-color 0%, $middle-color 50%,$end-color 100%);
-    background: -webkit-linear-gradient(left, $start-color 0%,$middle-color 50%,$end-color 100%);
-    background: linear-gradient(to left, $start-color 0%,$middle-color 50%,$end-color 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='#4bc0c8',GradientType=0 );
+    height: 9px;
+    @include grad-main($start-color, $middle-color, $end-color, $fallback-color);
+}
+
+.gradient-text {
+    @include grad-text($start-color, $middle-color, $end-color, $fallback-color);
 }

@@ -1,6 +1,12 @@
-$site-width: 1200px;
-$base-font: Helvetica, sans-serif;
+//site widths
+$max-site-width: 1800px;
+$site-width: 1000px;
+
+//fonts
+$base-font: 'moon_regular', Arial, sans-serif;
 $base-font-size: 16px;
+
+//font colour
 $primary-color: #ffffff;
 $secondary-color: #58a5c9;
 $dark-text: #404040;
@@ -11,6 +17,7 @@ $middle-color: #c779d0;
 $end-color: #4bc0c8;
 $fallback-color: #4bc0c8;
 
+//breakpoints
 $s-breakpoint: 480px;
 $m-breakpoint: 768px;
 $l-breakpoint: 1024px;
