@@ -13,7 +13,7 @@
     flex: auto;
     flex-direction: column;
     justify-content: center;
-    margin: .5vw;
+    margin: 1vw;
     text-align: center;
     min-width: 300px;
     position: relative;
@@ -30,11 +30,23 @@
     &__text {
         background-color: rgba(0, 0, 0, 0.8);
         color: #fff;
-        opacity: 0;
-        padding: 1em;
+        opacity: 1;
         position: absolute;
-        top: 15%;
+        bottom: 0;
+        margin: 0;
+        padding: 3px;
+        height: 40px;
+        width: 100%;
         transition: opacity .5s ease;
+
+        @media only screen and (min-width: $l-breakpoint) {
+            opacity: 0;
+            padding: 1em;
+            top: 50%;
+            transform: translateY(-50%);
+            width: auto;
+            height: auto;
+        }
 
         span {
             text-transform: uppercase;
