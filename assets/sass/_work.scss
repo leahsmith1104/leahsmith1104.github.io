@@ -2,7 +2,8 @@
     display: flex;
     flex-flow: row wrap;
     padding: 0 3%;
-    @media only screen and (min-width: $s-breakpoint) {
+    @media only screen and (min-width: $l-breakpoint) {
+        padding: 0;
     }
 }
 
