@@ -1,9 +1,8 @@
 .work {
     display: flex;
     flex-flow: row wrap;
-    padding: 2rem 0;
+    padding: 0 3%;
     @media only screen and (min-width: $s-breakpoint) {
-        padding: .5vw;
     }
 }
 
