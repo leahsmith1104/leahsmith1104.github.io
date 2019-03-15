@@ -39,6 +39,10 @@ nav {
       margin: 0;
       padding: 10px 0;
 
+      &:hover {
+          @include grad-text($start-color, $middle-color, $end-color, $fallback-color);
+      }
+
       @media only screen and (min-width: $s-breakpoint) {
           text-align: left;
       }
