@@ -4,7 +4,8 @@
 @import "./gradients";
 @import "./nav";
 @import "./hero";
-@import "./work";
+@import "./gallery";
+@import "./about";
 @import "./footer";
 
 body {
@@ -23,6 +24,11 @@ body {
 
 .fixed-width {
     max-width: $site-width;
+    margin: 0 auto;
+}
+
+.fixed-width--thin {
+    max-width: $site-width-thin;
     margin: 0 auto;
 }
 

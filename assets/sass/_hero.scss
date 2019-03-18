@@ -16,3 +16,17 @@
         }
     }
 }
+
+.hero-image {
+    width: 100%;
+
+    &__image {
+        display: block;
+        margin: 0 auto;
+        width: 35%;
+    }
+
+    &__image--circle {
+        border-radius: 50%;
+    }
+}
