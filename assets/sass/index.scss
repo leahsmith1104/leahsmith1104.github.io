@@ -40,3 +40,7 @@ body {
 .gradient-text {
     @include grad-text($start-color, $middle-color, $end-color, $fallback-color);
 }
+
+.flush__top {
+    padding-top: 0!important;
+}

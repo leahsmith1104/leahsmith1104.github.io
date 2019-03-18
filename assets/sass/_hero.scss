@@ -22,8 +22,11 @@
 
     &__image {
         display: block;
-        margin: 0 auto;
-        width: 35%;
+        margin: 4% auto 0;
+        width: 45%;
+        @media only screen and (min-width: $s-breakpoint) {
+            width: 35%;
+        }
     }
 
     &__image--circle {
