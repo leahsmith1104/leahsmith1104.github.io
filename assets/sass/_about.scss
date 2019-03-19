@@ -53,6 +53,7 @@
         text-align: center;
         list-style-type: none;
         letter-spacing: 1px;
+        border-left: none;
         border-right-width: 1px;
         border-right-style: solid;
         border-image: linear-gradient(to bottom, $end-color, $middle-color, $start-color) 1 100%;
