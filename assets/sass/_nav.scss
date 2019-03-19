@@ -74,6 +74,6 @@ nav {
       }
     }
 
-    .navigation__item:hover::after, .active::after {
+    .active::after {
       width: 100%;
     }
