@@ -49,31 +49,37 @@ nav {
       }
   }
 
-  .navigation {
-      text-align: center;
-      text-align: right;
-      flex-grow: 1;
-      padding: 5px 0;
-      font-size: 14px;
-      @media only screen and (min-width: $s-breakpoint) {
-          padding: 0;
-          font-size: 16px;
-      }
+.navigation {
+  text-align: center;
+  text-align: right;
+  flex-grow: 1;
+  padding: 5px 0;
+  font-size: 14px;
+  @media only screen and (min-width: $s-breakpoint) {
+      padding: 0;
+      font-size: 16px;
   }
+}
 
-    .navigation__item::after, .active::after {
-      content: '';
-      display: block;
-      width: 0;
-      margin-top: 6px;
-      height: 3px;
-      @include grad-main($start-color, $middle-color, $end-color, $fallback-color);
-      transition: width .3s;
-      @media only screen and (min-width: $s-breakpoint) {
-          margin-top: 10px;
-      }
-    }
+.navigation__item::after, .active::after {
+  content: '';
+  display: block;
+  width: 0;
+  margin-top: 6px;
+  height: 3px;
+  @include grad-main($start-color, $middle-color, $end-color, $fallback-color);
+  transition: width .3s;
+  @media only screen and (min-width: $s-breakpoint) {
+      margin-top: 10px;
+  }
+}
 
-    .active::after {
+.active::after {
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    .navigation__item:hover::after {
       width: 100%;
     }
+}
