@@ -50,16 +50,26 @@
 
     &__item {
         display: inline-block;
+        position: relative;
         text-align: center;
         list-style-type: none;
         letter-spacing: 1px;
-        border-left: none;
-        border-right-width: 1px;
-        border-right-style: solid;
-        border-image: linear-gradient(to bottom, $end-color, $middle-color, $start-color) 1 100%;
+        // border-left: none;
+        // border-right-width: 1px;
+        // border-right-style: solid;
+        // border-image: linear-gradient(to bottom, $end-color, $middle-color, $start-color) 1 100%;
         @media only screen and (min-width: $s-breakpoint) {
             padding: 2% 0 0;
             width: 32%;
+        }
+
+        &__item:after {
+            @include grad-text($start-color, $middle-color, $end-color, $fallback-color);
+            width: 2px;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
         }
 
         h3 {
