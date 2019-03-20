@@ -1,0 +1,49 @@
+.story {
+    padding: 0 4%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.story-title {
+    flex-basis: 100%;
+    align-self: flex-start;
+
+    &__title {
+        width: 50%;
+        margin: 0 0 20px;
+
+        @media only screen and (min-width: $s-breakpoint) {
+            width:35%;
+        }
+        @media only screen and (min-width: $m-breakpoint) {
+            width:25%;
+        }
+    }
+}
+
+.story-about {
+    flex-basis: 100%;
+
+    @media only screen and (min-width: $m-breakpoint) {
+        flex-basis: 70%;
+    }
+
+    &__body {
+        margin: 0;
+    }
+}
+
+.story-stats {
+    flex-basis: 100%;
+    padding: 0;
+
+    @media only screen and (min-width: $m-breakpoint) {
+        flex-basis: 30%;
+        padding: 0 0 0 4%;
+    }
+
+    &__item {
+        margin: 0 0 10px;
+    }
+  }
