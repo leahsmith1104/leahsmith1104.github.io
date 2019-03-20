@@ -15,9 +15,11 @@
 
         @media only screen and (min-width: $s-breakpoint) {
             width:35%;
+            margin: 0 0 10px;
         }
         @media only screen and (min-width: $m-breakpoint) {
             width:25%;
+            margin: 0 0 20px;
         }
     }
 }
@@ -36,14 +38,25 @@
 
 .story-stats {
     flex-basis: 100%;
-    padding: 0;
+    flex-direction: column;
+    padding: 10px 0 0;
+    color: $light-text;
+
+    @media only screen and (min-width: $s-breakpoint) {
+        display: flex;
+        flex-direction: row;
+        padding: 10px 0 0
+    }
 
     @media only screen and (min-width: $m-breakpoint) {
         flex-basis: 30%;
+        flex-direction: column;
         padding: 0 0 0 4%;
     }
 
     &__item {
         margin: 0 0 10px;
+        flex-basis: 33%;
+        position: relative;
     }
   }
