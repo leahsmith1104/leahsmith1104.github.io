@@ -13,12 +13,12 @@
     flex: auto;
     flex-direction: column;
     justify-content: center;
-    margin: 1vw;
+    margin: 2vw 1vw;
     text-align: center;
     width: 280px;
     position: relative;
     @media only screen and (min-width: $s-breakpoint) {
-
+        margin: 1vw;
     }
 
     &__img {
