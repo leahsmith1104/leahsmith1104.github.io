@@ -63,14 +63,22 @@
             width: 32%;
         }
 
-        &__item:after {
+        &:after {
             content: "";
-            @include grad-text($start-color, $middle-color, $end-color, $fallback-color);
+            background-color: $fallback-color;
+            background-image: -moz-linear-gradient(top, $start-color 0%, $middle-color 50%,$end-color 100%);
+            background-image: -webkit-linear-gradient(top, $start-color 0%,$middle-color 50%,$end-color 100%);
+            background-image: linear-gradient(to top, $start-color 0%,$middle-color 50%,$end-color 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='#4bc0c8',GradientType=0 );
             width: 2px;
             height: 100%;
             position: absolute;
             right: 0;
             top: 0;
+        }
+
+        &:last-child:after {
+            background: none;
         }
 
         h3 {
