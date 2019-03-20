@@ -8,6 +8,7 @@
   <title>Leah Smith</title>
 
   <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
@@ -16,7 +17,7 @@
     <div class="page-border"></div>
 
     <div class="site-wrapper">
-        <nav>
+        <nav data-aos="fade-in"  data-aos-duration="2000" data-aos-delay="200">
             <h1 class="logo"><a href="index.html">Leah Smith</a></h1>
             <ul class="navigation">
                 <li class="navigation__item  active"><a href="index.html">Work</a></li>
@@ -24,13 +25,13 @@
             </ul>
         </nav>
 
-        <section class="hero-image fixed-width">
+        <section class="hero-image fixed-width" data-aos="fade-in"  data-aos-duration="2000" data-aos-delay="200">
             <img class="hero-image__banner" src="assets/img/banner/record-banner.jpg" alt="Hero Banner" />
         </section>
 
         <section class="story fixed-width">
 
-            <div class="story-stats">
+            <div class="story-stats" data-aos="fade-in"  data-aos-duration="2000" data-aos-delay="200">
                 <ul class="icon-list">
                     <li class="icon-list__item">
                         <h3 class="icon-list__text">Category</h3>
@@ -49,23 +50,23 @@
                 </ul>
             </div>
 
-            <div class="story-title">
+            <div class="story-title" data-aos="fade-in"  data-aos-duration="1500">
                 <h2 class="story-title__title gradient-text">Record Prints</h2>
             </div>
-            <div class="story-about">
+            <div class="story-about" data-aos="fade-in"  data-aos-duration="1500">
                 <p class="story-about__body">The record prints are designed for music lovers. A way of remembering special memories, first gigs, favourite gigs or anniversaries. Each print is a personalised record with the lyrics of the chosen song by the artist wrapped around the middle to create the record itself. Each lyric line is broken by a circle before the next starts. The records contain the artist, song length and title. They can also be personalised with special dates.</p>
             </div>
         </section>
 
-        <section class="hero-image fixed-width">
+        <section class="hero-image fixed-width" data-aos="fade-in"  data-aos-duration="1500">
             <img class="hero-image__banner" src="assets/img/banner/records-banner.jpg" alt="Hero Banner" />
         </section>
 
-        <section class="hero-image fixed-width">
+        <section class="hero-image fixed-width" data-aos="fade-in"  data-aos-duration="1500">
             <img class="hero-image__banner" src="assets/img/banner/record-green.jpg" alt="Hero Banner" />
         </section>
 
-        <section class="hero-image fixed-width">
+        <section class="hero-image fixed-width" data-aos="fade-in"  data-aos-duration="1500">
             <img class="hero-image__banner" src="assets/img/banner/record-large.jpg" alt="Hero Banner" />
         </section>
 
@@ -73,5 +74,11 @@
             <p class="footer__content">Copyright &copy; 2019 Leah Smith.</p>
         </footer>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 </html>
