@@ -64,6 +64,7 @@
         }
 
         &__item:after {
+            content: "";
             @include grad-text($start-color, $middle-color, $end-color, $fallback-color);
             width: 2px;
             height: 100%;
