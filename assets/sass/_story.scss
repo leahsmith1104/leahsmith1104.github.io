@@ -12,14 +12,14 @@
 
     &__title {
         font-family: 'stellarmedium', Arial, sans-serif;
-        width: 50%;
+        width: 66%;
         margin: 20px 0 10px;
 
         @media only screen and (min-width: $s-breakpoint) {
-            width:35%;
+            width:44%;
         }
         @media only screen and (min-width: $m-breakpoint) {
-            width:20%;
+            width:28%;
         }
     }
 }
@@ -31,7 +31,7 @@
         margin: 0 0 10px;
         position: relative;
         color: $light-text;
-        
+
         @media only screen and (min-width: $m-breakpoint) {
             margin: 0 0 20px;
         }
