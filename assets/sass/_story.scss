@@ -82,7 +82,7 @@
       flex-basis: 100%;
       padding: 20px 0 0;
 
-      @media only screen and (min-width: $m-breakpoint) {
+      @media only screen and (min-width: $l-breakpoint) {
           flex-basis: 48%;
       }
   }
@@ -90,7 +90,7 @@
   .project-image {
       flex-basis: 100%;
 
-      @media only screen and (min-width: $m-breakpoint) {
+      @media only screen and (min-width: $l-breakpoint) {
           flex-basis:: 50%;
           align-self: center;
       }
