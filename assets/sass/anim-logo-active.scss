@@ -1,0 +1,274 @@
+.bt-logo {
+
+    &__front {
+        margin: auto;
+        position: relative;
+        width: 80%;
+        height: 80%;
+        top: 0;
+        left: 0;
+        z-index: 8;
+        -webkit-transform: translateZ(100px);
+    }
+
+    &__glow {
+        position: absolute;
+        height: 140%;
+        top: -30px;
+        left: 0;
+        z-index: 1;
+    }
+
+    &__lights {
+        position: absolute;
+        height: 149%;
+        top: -18%;
+        left: -16%;
+        z-index: 10;
+        opacity: 0;
+        -webkit-transform: translateZ(102px);
+        animation: lightGlow 2s 3s ease infinite;
+    }
+
+    &__lights--soon {
+        top: -20%;
+        left: -4.5%;
+    }
+
+    &__lights--active {
+        top: -18%;
+        left: -5.5%;
+    }
+
+    &__sign,
+    &__sign--light {
+        position: absolute;
+        width: 32%;
+        height: auto;
+        top: 66%;
+        left: 38%;
+        z-index: 10;
+        opacity: 0;
+        -webkit-transform: translateZ(101px);
+    }
+
+    &__sign {
+        opacity: 1;
+    }
+
+    &__sign--light {
+        opacity: 0;
+        animation: signGlow 0.1s 1.5s ease 10 forwards;
+    }
+
+    &__glow {
+        position: absolute;
+        height: 140%;
+        top: -30px;
+        left: 0;
+        z-index: 1;
+    }
+
+    &__lights {
+        position: absolute;
+        height: 149%;
+        top: -18%;
+        left: -16%;
+        z-index: 10;
+        opacity: 0;
+        animation: lightGlow 2s 3s ease infinite;
+    }
+
+    &__lights--active {
+        top: -18%;
+        left: -5.5%;
+    }
+
+    &__sign,
+    &__sign--light {
+        position: absolute;
+        width: 32%;
+        height: auto;
+        top: 66%;
+        left: 38%;
+        z-index: 10;
+    }
+
+    &__sign--light {
+        opacity: 0;
+        animation: signGlow 0.1s 1.5s ease 10 forwards;
+    }
+
+    &__stars,
+    &__star {
+        position: absolute;
+        height: auto;
+        top: 0;
+        z-index: 10;
+        opacity: 0;
+        -webkit-transform: translateZ(101px);
+    }
+
+    &__stars {
+        opacity: 1;
+        width: 81%;
+        left: 10%;
+        top: 24%;
+    }
+
+    &__star--small {
+        width: 78%;
+        left: 13%;
+        top: 43%;
+        animation: starGlow 0.1s 1.4s ease 6 forwards;
+    }
+
+    &__star--default {
+        width: 78%;
+        left: 12%;
+        top: 38%;
+        animation: starGlow 0.1s 2s ease 4 forwards;
+    }
+
+    &__star--big {
+        width: 80%;
+        left: 10%;
+        top: 24%;
+        animation: starGlow 0.1s 2.9s ease 7 forwards;
+    }
+
+    &__cogs {
+        position: absolute;
+        top: 0;
+        z-index: 2;
+    }
+
+    &__cog {
+        height: 76%;
+        left: 80px;
+        top: 80px;
+    }
+
+    &__leftCog--default {
+        height: 40%;
+        top: 16%;
+        left: 25%;
+        transform: translateZ(1px);
+        animation: spin-with-z 3.4s 0.3s linear reverse;
+    }
+
+    &__leftCog--big {
+        height: 60%;
+        left: 7%;
+        top: 32%;
+        animation: bigSpin 3.1s 0.8s cubic-bezier(0.58,0.64,0.86,0.99);
+    }
+
+    &__leftCog--small {
+        height: 29%;
+        top: 62%;
+        left: 30%;
+        animation: quickSpin 3.3s linear reverse;
+        z-index: 1;
+    }
+
+    &__rightCog--default {
+        height: 38%;
+        top: 53%;
+        right: 27%;
+        z-index: 1;
+        animation: spin 3.4s 0.6s linear;
+    }
+
+    &__rightCog--big {
+        height: 50%;
+        top: 19%;
+        right: 7%;
+        z-index: 2;
+        transform-style: preserve-3d;
+        transform: rotateX(180deg) rotateY(20deg) rotateZ(0deg);
+        animation: bigSpin-perspective 3.4s 0.7s cubic-bezier(0.58,0.64,0.86,0.99) reverse forwards;
+    }
+
+    &__rightCog--small {
+        height: 23%;
+        top: 20%;
+        right: 25%;
+        z-index: 0;
+        transform-style: preserve-3d;
+        transform: rotateX(180deg) rotateY(20deg) rotateZ(0deg);
+        animation: spin-perspective 3.3s 0.2s linear forwards;
+    }
+
+    &__bigLight {
+        position: absolute;
+        width: 50%;
+        top: -40%;
+        transform-origin: bottom center;
+    }
+
+    &__bigLight--left {
+        left: 10%;
+        animation: leftLightRotate 3s 1s ease-in-out infinite;
+    }
+
+    &__bigLight--right {
+        right: 10%;
+        animation: rightLightRotate 3s 1s ease-in-out infinite reverse;
+    }
+}
+
+@keyframes quickSpin {
+    to { transform: rotate(1800deg); }
+}
+
+@keyframes spin {
+    to { transform: rotate(1440deg); }
+}
+
+@keyframes bigSpin {
+    to { transform: rotate(720deg); }
+}
+
+@keyframes spin-perspective {
+    from { transform: rotateX(180deg) rotateY(20deg) rotateZ(0deg); }
+    to { transform: rotateX(180deg) rotateY(20deg) rotateZ(1800deg); }
+}
+
+@keyframes bigSpin-perspective {
+    from { transform: rotateX(180deg) rotateY(20deg) rotateZ(0deg); }
+    to { transform: rotateX(180deg) rotateY(20deg) rotateZ(720deg); }
+}
+
+@keyframes spin-with-z {
+    from { transform: translateZ(1px) rotateZ(0deg); }
+    to { transform: translateZ(1px) rotateZ(1440deg); }
+}
+
+@keyframes starGlow {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes lightGlow {
+    0% { opacity: 0; }
+    50% { opacity: 0.7; }
+    100% { opacity: 0; }
+}
+
+@keyframes signGlow {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+@keyframes leftLightRotate {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(40deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes rightLightRotate {
+    0% { transform: rotate(359deg); }
+    50% { transform: rotate(319deg); }
+    100% { transform: rotate(359deg); }
+}

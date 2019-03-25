@@ -96,12 +96,20 @@
       }
 
       &__image--right {
-              width: 100%;
-              padding-left: 4%;
+          width: 100%;
+          padding-left: 0;
+
+         @media only screen and (min-width: $l-breakpoint) {
+             padding-left: 4%;
+         }
       }
 
       &__image--left {
           width: 100%;
-          padding-right: 4%;
+          padding-right: 0;
+
+          @media only screen and (min-width: $l-breakpoint) {
+              padding-right: 4%;
+          }
       }
   }
