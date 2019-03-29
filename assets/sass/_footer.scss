@@ -2,4 +2,28 @@ footer {
     padding: 2% 4%;
     text-align: left;
     color: $dark-text;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .footer__content {
+
+      flex-grow: 1;
+
+  }
+
+  .footer__links {
+
+      padding: 0 2%;
+
+      @media only screen and (min-width: $m-breakpoint) {
+          padding: 0 1%;
+      }
+
+      i {
+          font-size: 24px;
+          @include grad-text($start-color, $middle-color, $end-color, $fallback-color);
+      }
+
   }
