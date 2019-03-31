@@ -11,16 +11,17 @@
   <title>Leah Smith</title>
 
   <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 </head>
 
 <body>
 
-    <div class="page-border"></div>
+    <div class="page-border" data-aos="fade-in"  data-aos-duration="1500" data-aos-delay="200"></div>
 
     <div class="site-wrapper">
-        <nav>
+        <nav data-aos="fade-in"  data-aos-duration="1500" data-aos-delay="200">
             <h1 class="logo"><a href="index.html">Leah Smith</a></h1>
             <ul class="navigation">
                 <li class="navigation__item"><a href="index.html">Work</a></li>
@@ -28,11 +29,11 @@
             </ul>
         </nav>
 
-        <section class="hero-image fixed-width--thin">
+        <section class="hero-image fixed-width--thin" data-aos="fade-in"  data-aos-duration="1500" data-aos-delay="200">
             <img class="hero-image__image hero-image__image--circle" src="assets/img/leah.jpg" alt="Image of Leah" />
         </section>
 
-        <section class="about fixed-width--thin">
+        <section class="about fixed-width--thin" data-aos="fade-in"  data-aos-duration="1500" data-aos-delay="200">
 
             <div class="about__icon-list">
                 <ul class="icon-list">
@@ -53,13 +54,13 @@
                 </ul>
             </div>
 
-            <div class="about__text">
+            <div class="about__text" data-aos="fade-in"  data-aos-duration="1500" data-aos-delay="200">
                 <h2>About me</h2>
                 <p>I'm a UX/UI designer with a great eye for detail and consistency who can also implement the front end <span class="gradient-text">(some call this a UX Unicorn)</span>. I’m passionate about seeing a project through the user centred design process.  If you want to know more, either contact me or check out my skill set/experience below.</p>
                 <p>I also design and sell prints in my spare time, some of which are featured in this portfolio.</p>
             </div>
 
-            <div class="about__skills">
+            <div class="about__skills" data-aos="fade-in"  data-aos-duration="1500" data-aos-delay="200">
                 <h2>Knowledge of</h2>
 
                 <div class="skill  flush__top">
@@ -103,7 +104,7 @@
                 </div>
             </div>
 
-            <div class="about__skills">
+            <div class="about__skills" data-aos="fade-in"  data-aos-duration="1500" data-aos-delay="200">
                 <h2>Software</h2>
 
                 <div class="skill  flush__top">
@@ -139,7 +140,7 @@
                 </div>
             </div>
 
-            <div class="about__experience">
+            <div class="about__experience" data-aos="fade-in"  data-aos-duration="1500" data-aos-delay="200">
                 <div class="experience">
                     <h2>Experience</h2>
                     <div class="experience__item">
@@ -180,5 +181,11 @@
             <a href="https://www.instagram.com/leahsmith1104/" target="_blank" class="footer__links"><i class="fab fa-instagram"></i></a>
         </footer>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 </html>
