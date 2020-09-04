@@ -7,6 +7,6 @@
     "sass": "node-sass -w assets/sass/index.scss -o assets/css/ --output-style compressed"
   },
   "devDependencies": {
-    "node-sass": "4.11.0"
+    "node-sass": "4.14.1"
   }
 }
